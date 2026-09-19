@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(71, 178, 236);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.judul{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    text-shadow: 2px 2px 4px aqua;
+}
+
+.login{
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    text-shadow: 2px 2px 4px rgb(42, 40, 40);
+}
+
+
+body.halaman-home::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.nav {
+   display: flex;
+   justify-content: flex-start;
+   gap: 30px;
+   align-items: center;
+   padding-block: 0;
+   list-style: none;
+}
+
+.nav-link img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+/* style coding FORM LOGIN --> */
+.login {
+    width: 350px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+}
+
+.login input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.login button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#pesan {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.pesan-salah {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.pesan-benar {
+    color: white;
+    background-color: rgba(0, 180, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* style coding FORM LOGIN --> */
+
+
+#jam {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+}
+
+#tanggal {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 4px white;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    color: #cccccc;
+}
+
+.footer ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer hr {
+    border-color: #555;
+    margin-top: 20px;
+}
