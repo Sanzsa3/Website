@@ -51,26 +51,85 @@ ul {
     align-items: center;
 }
 
-figure {
-    color: white;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    text-shadow: 2px 2px 4px blanchedalmond;
-}
 
+/* CARD IKAN */
 .card {
-    background-color: rgb(255, 255, 255, 0.75);
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
 }
 
-.card-img-top {
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
+/*efek animasi */
+.card {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: muncul 0.8s ease forwards;
 }
 
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efek ketika mouse diarahkan ke card */
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Ukuran semua gambar sama */
+.gambar-ikan {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Isi card */
+.card-body {
+    padding: 15px;
+}
+
+/* Judul */
+.card-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Tabel biografi */
+.tabel-ikan {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Kolom kiri */
+.tabel-ikan td:first-child {
+    width: 38%;
+    font-weight: bold;
+}
+
+/* Agar teks panjang tidak membuat card melebar */
+.tabel-ikan td {
+    vertical-align: top;
+    word-break: normal;
+}
+
+/* Tombol */
+.card .btn {
+    border-radius: 8px;
+}
+
+/* Judul kategori */
+.container > .text-center h2 {
+    font-weight: bold;
 }
 
 /*footer*/

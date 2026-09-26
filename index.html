@@ -18,13 +18,6 @@
               <span>Home</span>
           </a>
             </li>
-
-              <li class="nav-item">
-                  <a class="nav-link" href="index2.html">
-                      Halaman berikutnya
-                  </a>
-              </li>
-
           </ul>
 
           <div class="judul">
@@ -38,7 +31,7 @@
 
           <!-- FORM LOGIN -->
 
-          <div class="login">
+          <form class="login" onsubmit="masuk(event)" class="col-12 col-sm-6 col-lg-3">
 
               <h2>Masuk ke Website</h2>
 
@@ -53,23 +46,28 @@
           <button type="button" onclick="lihatKode()" id="tombolMata">👁️</button>
               </div>
               
-              <button onclick="masuk()">Masuk</button>
+              <button type="submit">Masuk</button>
 
-            <h4>Tolong diisi dengan sesuai ya!</h4>
+            <div id="jam"></div>
+            <div id="tanggal"></div>
 
-              <p id="pesan"></p>
+            <p id="pesan"></p>
 
-          </div>
+
+          </form>
 
 
           <script>
 
-              function masuk() {
+              function masuk(event) {
+
+              event.preventDefault();
+
 
                   const nama = document.getElementById("nama").value;
                   const kode = document.getElementById("kode").value;
 
-                  const kodeBenar = "FISHING123";
+                  const kodeBenar = nama + "123";
 
                   if (nama === "") {
 
@@ -124,9 +122,6 @@
 
          <BR></BR>
 
-<div id="jam"></div>
-<div id="tanggal"></div>
-
 <script>
     function updateWaktu() {
         const sekarang = new Date();
@@ -151,7 +146,7 @@
     setInterval(updateWaktu, 1000);
 </script>
 
- <img src="23b1860f-b52f-46f8-b4b4-5e32538458d4.png" alt="Ikan">
+ <img class="col-20 col-sm-15 col-lg-20" src="23b1860f-b52f-46f8-b4b4-5e32538458d4.png" alt="Ikan">
  
 <footer class="footer mt-5">
     <div class="container">
@@ -172,7 +167,7 @@
                 <ul class="list-unstyled">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index2.html">Jenis Ikan</a></li>
-                    <li><a href="#">Tips Memancing</a></li>
+                    <li><a href="index2.html">Tips Memancing</a></li>
                     <li><a href="#">Tentang Kami</a></li>
                 </ul>
             </div>
